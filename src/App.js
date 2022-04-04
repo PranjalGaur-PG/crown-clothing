@@ -1,6 +1,7 @@
 import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import {Routes, Route} from 'react-router-dom';
+import ShopPage from './pages/shop/shop.component';
 
 const HatsPage = (props) => {
   console.log(props);
@@ -37,6 +38,7 @@ function App() {
         <Route path='/hats' element={ <HatsPage /> } />
         <Route path='/topics' element={ <TopicList /> } />
         <Route path='/topics/:topicId' element={ <TopicDetail /> } />
+        <Route path='/shop' element={ <ShopPage /> } />
       </Routes>
     </div>
   );
